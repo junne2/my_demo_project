@@ -1,43 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css,javascript -->
+    <!-- 기본 css 설정 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./page.css">
+
     <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</head>
+<body>
+    <div>
+        <header id="header" class data-bg="transparent2">
+            <!-- page top main inner -->
+            <div class="header-inner">
+                <h1><a class="logo">Night view</a></h1>
+                <nav>
+                    <a href="/seoul">Seoul</a>
+                    <a href="/gyenggi">Gyeonggi</a>
+                    <a href="/incheon">Incheon</a>
+                    <a href="/ulsan">Ulsan</a>
+                    <a href="/busan">Busan</a>
+                </nav>
+            </div>
+        </header>
+        <div id="Home">
+            <div id="content">
+                <section id="fiest_section">
+                    <div class="section-inner">
+                        <h2>
+                            <span>Welcom to KOREA!!</span><br />
+                            <span>night view spots</span><br />
+                            <span>Please visit</span>
+                        </h2>
+                        <p>
+                            한국에 있는 야경 명소에 대한 정보들을 담아 보았습니다.<br>
+                            야경을 좋아하는 사람들을 위한 페이지 입니다. 방문해 주셔서 감사합니다.<br>
+                            오늘 하루도 좋은 배경을 보며 하루의 마무리를 즐겁게 끝내셨으면 좋겠습니다.
+                        </p>
+                        <button class="btn-video-watch">
+                            <span> Watch vidio</span>
+                        </button>
+                        <div class="btn-app-down">
+                            <a href="https://namu.wiki/w/%EC%95%BC%EA%B2%BD">나무위키(야경)</a>
+                            <a href="https://ko.wikipedia.org/wiki/%EC%95%BC%EA%B2%BD">위키백과(야경)</a>
+                        </div>
+                    </div>    
+                    <div class="movie-area">
+                        <video muted autoplay loop>
+                            <source src="https://vod-progressive.akamaized.net/exp=1651221867~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F788%2F26%2F653943290%2F3002163166.mp4~hmac=2102151f4cb7519805ed30396acca19a0436ce12512065f3f168806b11ad57e7/vimeo-prod-skyfire-std-us/01/788/26/653943290/3002163166.mp4?filename=Pier+-+99839.mp4" type="video/mp4">
+                            Network
+                        </video>
+                    </div>
+                </section>
+                <section id="second_section">
+                    <div class="movie-area viewportable show" style="text-align:left">
+                        <video muted autoplay loop>
+                            <!-- Video by JEONGWOO KIM from Pixabay  -->
+                            <source src="https://vod-progressive.akamaized.net/exp=1651221763~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4699%2F12%2F323496013%2F1259751207.mp4~hmac=092364c6295853524c17ba70bb6702c2534847028bd78ef555e43555ecdec1ea/vimeo-prod-skyfire-std-us/01/4699/12/323496013/1259751207.mp4?filename=Seoul+-+21985.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="section-inner"  >
+                      <h2 class="viewportable show">
+                          <span>도시의 밤</span><br />
+                          <span>빛으로 하는 힐링</span>
+                      </h2>
+                    </div>
+                </section>
+                <section id="third_section">
+                    <div class="section-inner">
+                      <h2>
+                          <span> SNS 명소</span><br />
+                          <span>sns 비슷한 사진으로 구성하기 혹은 전국에 명소를 포인트 지도로 만들기</span> 
+                      </h2>
+                      <p>
+                      방문 후기 글 만들기<br />
+                      We build the tools to make that dream a reality. 
+                      </p>
+                    </div>
+              </section>
+              <section id="fourth_section">
+                  <div class="section-inner">
+                      원형 스와이프
+                  </div>
+              </section>
+              <section id="fifth_section" bg-color="gray" data-nav-color="gray">
+                  <div class="section-inner">
+                      <h2>New</h2>
+                      <p>설명</p>
+                      <div class="new-container">
+                          <ul>
+                              <li class="viewportable show">
+                                  <a href="#!">
+                                      <div class="contents">
+                                          <p class="msg">
+                                              데이트 코스로 야경 만한게 없죠!! 와 같은 방명록 혹은 뉴스 기사 모으기
+                                          </p>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="viewportable show">
+                                  <a href="#!">
+                                      <div class="contents">
+                                          <p class="msg">
+                                              Gluwa has made it to the Big Apple! 🗽 Watch our enthralling 3D advert which is on display now at Times Square New York City! 📺 ...
+                                          </p>
+                                      </div>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      댓글기능
+                  </div>
+              </section>
+          </div> 
+      </div>
+  )
+}
+<footer id="footer">
+  <div class="footer-inner"> 
+      Footer 
+      <div class="menu">
+          
+      </div>
+  
+      <div class="outlink">
+          <ul>
+              <li>
+                  <a class="Github" href="https://github.com/" target="_blank" rel="noreferrer" >
+                      <img src="./images/github.png" alt="github" />
+                  </a>
+                  <a class="Github" href="https://github.com/" target="_blank" rel="noreferrer" >
+                      <img src="./images/github.png" alt="github" />
+                  </a>
+                  <a class="Github" href="https://github.com/" target="_blank" rel="noreferrer" >
+                      <img src="./images/github.png" alt="github" />
+                  </a>
+                  <a class="Github" href="https://github.com/" target="_blank" rel="noreferrer" >
+                      <img src="./images/github.png" alt="github" />
+                  </a>
+                  <a class="Github" href="https://github.com/" target="_blank" rel="noreferrer" >
+                      <img src="./images/github.png" alt="github" />
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div>
+      <p>개인 연습용 페이지 입니다. </p>
+      <p>제작용 동영상 페이지 https://pixabay.com/videos/</p>
+  </div>
+</footer>
+</body>
 </html>
